@@ -108,6 +108,105 @@ html, body {
 .footer-end{
     color: white;
 }
-  
+
+.about {
+    max-width: 850px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+.about p {
+    font-size: 18px;
+    text-align: justify;
+}
+
+.about-li {
+    list-style-type: none;
+    padding: 0;
+    margin: 20px 0;
+}
+
+.about-li li {
+    padding: 8px 12px;
+    background-color: #fff;
+    border-radius: 5px;
+    margin: 5px 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease-in-out;
+}
+
+.about-li li:hover {
+    transform: scale(1.03);
+    background-color: #e3f2fd;
+}
+
+.about h3 {
+    margin-top: 20px;
+    font-size: 22px;
+    color: #00acee;
+    text-align: center;
+}
+
+.contact {
+    max-width: 850px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+.contact p {
+    font-size: 18px;
+    text-align: justify;
+}
+
+.contact a {
+    color: #00acee;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.contact a:hover {
+    text-decoration: underline;
+}
+
+.contact-info {
+    margin: 20px 0;
+}
+
+.contact-info div {
+    margin-bottom: 15px;
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.contact-info div i {
+    font-size: 20px;
+    color: #00acee;
+}
+
+.contact h3 {
+    margin-top: 20px;
+    font-size: 22px;
+    color: #00acee;
+    text-align: center;
+}
+
+
   
 
