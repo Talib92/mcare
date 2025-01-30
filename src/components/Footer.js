@@ -61,7 +61,7 @@ const Footer = () => {
         &copy; Copyright {new Date().getFullYear()}, All rights reserved | M-Care Diagnostics.
       </div>
       <div className='footer-end'>
-        <p>Crafted with ❤ in Anantnag,Kashmir</p>
+        <p>Crafted with ❤ in Anantnag, Kashmir</p>
       </div>
     </div>
   );
