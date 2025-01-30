@@ -40,6 +40,17 @@ const About = () => {
           <li>Prostate-Specific Antigen (PSA)</li>
 
         </ul>
+        <div className='more-info'>
+          <div>
+            🕒 <strong>Working Hours:</strong> 
+            <p>Monday - Sunday: <strong>8am - 6pm</strong></p>
+          </div>
+
+          <div>
+            🏠 <strong>Home Sample Collection:</strong>  
+            <p>We offer home sample collection services for your convenience.</p>
+          </div>
+        </div>
         
         At M-Care Diagnostics, we prioritize patient care by delivering reliable 
         reports that assist doctors in making informed healthcare decisions. 

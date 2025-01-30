@@ -47,7 +47,7 @@ const Home = () => {
       <div className="services">
         <h2>Our Popular Tests</h2>
         <div className="services-grid">
-          {["Complete Blood Count (CBC)", "Liver Function Tests (LFT)", "Kidney Function Tests (KFT)", "Thyroid Function (T3, T4, TSH)", "Lipid Profile"].map((test, index) => (
+          {["Complete Blood Count (CBC)", "Liver Function Tests (LFT)", "Kidney Function Tests (KFT)", "Thyroid Function (T3, T4, TSH)", "Lipid Profile", "Vitamin D & B12 Tests", "Blood Sugar (Fasting & Random)"].map((test, index) => (
             <div key={index} className="service-card">
               <FaFlask className="service-icon" />
               <p>{test}</p>
@@ -80,28 +80,28 @@ const Home = () => {
         <div class="testimonial-card">
             <p>"Great service and very professional!"</p>
             <div class="testimonial-footer">
-                <span>- A Happy Patient</span>
+                <span>- Muhammad Talib</span>
                 <span class="stars">⭐⭐⭐⭐⭐</span>
             </div>
         </div>
         <div class="testimonial-card">
             <p>"The staff is friendly and efficient."</p>
             <div class="testimonial-footer">
-                <span>- A Happy Patient</span>
+                <span>- Muneeb Ahmad</span>
                 <span class="stars">⭐⭐⭐⭐⭐</span>
             </div>
         </div>
         <div class="testimonial-card">
             <p>"Highly recommended for accurate results!"</p>
             <div class="testimonial-footer">
-                <span>- A Happy Patient</span>
+                <span>- Asrar Ahmad</span>
                 <span class="stars">⭐⭐⭐⭐⭐</span>
             </div>
         </div>
         <div class="testimonial-card">
             <p>"Affordable and reliable diagnostic services."</p>
             <div class="testimonial-footer">
-                <span>- A Happy Patient</span>
+                <span>- Tawheed Khan</span>
                 <span class="stars">⭐⭐⭐⭐⭐</span>
             </div>
         </div>

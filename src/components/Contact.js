@@ -30,13 +30,12 @@ const Contact = () => {
 
         <div>
           🕒 <strong>Working Hours:</strong> 
-          <p>Monday - Saturday: <strong>9am - 6pm</strong></p>
-          <p>Sunday: <strong>9am - 7pm</strong></p>
+          <p>Monday - Sunday: <strong>8am - 6pm</strong></p>
         </div>
 
         <div>
           🏠 <strong>Home Sample Collection:</strong>  
-          <p>We offer home sample collection services for your convenience. <br /><strong>Call us to book an appointment!</strong></p>
+          <p>We offer home sample collection services for your convenience. <br /><strong>Call or Whatsapp us to book an appointment!</strong></p>
         </div>
 
         <div>
