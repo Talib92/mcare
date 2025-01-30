@@ -8,7 +8,7 @@ const Services = () => {
     <div className="services-page">
       <h2>Our Diagnostic Services</h2>
       <p>
-        At M-Care Diagnostics, we offer a comprehensive range of diagnostic services to help doctors and healthcare professionals make accurate and timely decisions. Our state-of-the-art equipment and expert team ensure high-quality results for all our tests.
+        At <strong>M-Care Diagnostics,</strong> we offer a comprehensive range of diagnostic services to help doctors and healthcare professionals make accurate and timely decisions. Our state-of-the-art equipment and expert team ensure high-quality results for all our tests.
       </p>
 
       <div className="services-list">

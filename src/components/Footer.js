@@ -58,7 +58,7 @@ const Footer = () => {
         </a>
       </div>
       <div className="copyright">
-        &copy; Copyright {new Date().getFullYear()}, All rights reserved | M-Care Diagnostics.
+        &copy; Copyright 2024-{new Date().getFullYear()}, All rights reserved | M-Care Diagnostics.
       </div>
       <div className='footer-end'>
         <p>Crafted with ❤ in Anantnag, Kashmir</p>

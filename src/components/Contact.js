@@ -42,8 +42,8 @@ const Contact = () => {
         <div>
           📲 <strong>Stay Connected:</strong> 
           <p>Follow us on</p> 
-          <a href="https://www.facebook.com/mcarediagnostics?mibextid=wwXIfr&rdid=33pGqgGlq5rUuT09&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F1XT4Cfyg99%2F%3Fmibextid%3DwwXIfr#" target="_blank" rel="noopener noreferrer">Facebook</a> |  
-          <a href="https://www.instagram.com/mcare.diagnostics?igsh=MTdkOHR4ZGh6bTZjdg%3D%3D&utm_source=qr" target="_blank" rel="noopener noreferrer"> Instagram</a> |
+          <a href="https://www.facebook.com/mcarediagnostics?mibextid=wwXIfr&rdid=33pGqgGlq5rUuT09&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F1XT4Cfyg99%2F%3Fmibextid%3DwwXIfr#" target="_blank" rel="noopener noreferrer">Facebook</a> -
+          <a href="https://www.instagram.com/mcare.diagnostics?igsh=MTdkOHR4ZGh6bTZjdg%3D%3D&utm_source=qr" target="_blank" rel="noopener noreferrer"> Instagram</a> -
           <a href="https://www.youtube.com/@Mcarediagnostics" target="_blank" rel="noopener noreferrer"> Youtube</a> 
           <p>for health tips, updates, and offers.</p>
         </div>
