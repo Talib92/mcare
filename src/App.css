@@ -4,6 +4,11 @@ html, body {
     padding: 10px 0px;
 }
 
+html {
+    scroll-behavior: smooth;
+  }
+  
+
 #root {
     display: flex;
     flex-direction: column;
@@ -93,7 +98,6 @@ html, body {
 
 .footer-details:hover{
     cursor: pointer;
-    color: #00acee;
 }
 
 .copyright {
@@ -207,6 +211,182 @@ html, body {
     text-align: center;
 }
 
+.home {
+    font-family: Arial, sans-serif;
+  }
+  
+  .hero {
+    background: #00acee;
+    color: white;
+    text-align: center;
+    padding: 60px 20px;
+  }
+  
+  .hero h1 {
+    font-size: 2.5rem;
+  }
+  
+  .hero p {
+    margin-top: 10px;
+    font-size: 1.2rem;
+  }
+  
+  .hero-buttons {
+    margin-top: 20px;
+  }
+  
+  .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 5px;
+    text-decoration: none;
+    margin: 5px;
+  }
+  
+  .primary {
+    background: white;
+    color: #00acee;
+    border: 2px solid white;
+  }
+  
+  .secondary {
+    background: transparent;
+    color: white;
+    border: 2px solid white;
+  }
+  
+  .btn:hover {
+    opacity: 0.8;
+    color: black;
+  }
+  
+  .about {
+    text-align: center;
+    padding: 50px 20px;
+    background: #f8f9fa;
+    max-width: 80%;
+    margin: 70px auto;
+  }
+  
+  .about h2 {
+    font-size: 2rem;
+  }
+  
+  .services {
+    text-align: center;
+    padding: 50px 20px;
+  }
 
+  .view-more {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color:#00acee ; 
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    text-align: center;
+    margin-top: 20px; 
+    transition: background-color 0.3s ease;
+  }
+  
+  .view-more:hover {
+    background-color: #0056b3; 
+  }
+  
+  
+  .services-grid {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+  }
+  
+  .service-card {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 200px;
+  }
+  
+  .service-icon {
+    font-size: 2rem;
+    color: #007bff;
+  }
+  
+  .why-choose-us {
+    text-align: center;
+    padding: 50px 20px;
+    background: #f8f9fa;
+  }
+  
+  .why-grid {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+  
+  .why-card {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 200px;
+  }
+  
+  .why-icon {
+    font-size: 2rem;
+    color: #007bff;
+  }
+  
+  .testimonials {
+    text-align: center;
+    padding: 50px 20px;
+  }
+  
+  .testimonial-card {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: auto;
+    width: 50%;
+  }
+  
+  .testimonial-footer {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+  }
+  
+  .stars {
+    color: gold;
+  }
+  
+  .contact-home {
+    text-align: center;
+    padding: 50px 20px;
+    background: #00acee;
+    color: white;
+  }
+  
+  .contact-buttons {
+    margin-top: 20px;
+  }
+  
+  .contact-buttons .btn {
+    background: white;
+    color: #007bff;
+    border: none;
+  }
+  
   
 
