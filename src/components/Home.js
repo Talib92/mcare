@@ -47,13 +47,7 @@ const Home = () => {
       <div className="services">
         <h2>Our Popular Tests</h2>
         <div className="services-grid">
-          {[
-            "Complete Blood Count (CBC)",
-            "Liver Function Tests (LFT)",
-            "Kidney Function Tests (KFT)",
-            "Thyroid Function (T3, T4, TSH)",
-            "Lipid Profile",
-          ].map((test, index) => (
+          {["Complete Blood Count (CBC)", "Liver Function Tests (LFT)", "Kidney Function Tests (KFT)", "Thyroid Function (T3, T4, TSH)", "Lipid Profile"].map((test, index) => (
             <div key={index} className="service-card">
               <FaFlask className="service-icon" />
               <p>{test}</p>
@@ -80,18 +74,40 @@ const Home = () => {
         </div>
       </div>
 
-      <div className="testimonials">
-        <h2>What Our Patients Say</h2>
-        <div className="testimonial-card">
-          <p>"Excellent service! Quick and accurate test results. Highly recommend M-Care Diagnostics!"</p>
-          <div className="testimonial-footer">
-            <span>- A Happy Patient</span>
-            <div className="stars">
-              <FaStar /><FaStar /><FaStar /><FaStar /><FaStar />
+      <section class="testimonials">
+    <h2>What Our Patients Say</h2>
+    <div class="testimonials-grid">
+        <div class="testimonial-card">
+            <p>"Great service and very professional!"</p>
+            <div class="testimonial-footer">
+                <span>- A Happy Patient</span>
+                <span class="stars">⭐⭐⭐⭐⭐</span>
             </div>
-          </div>
         </div>
-      </div>
+        <div class="testimonial-card">
+            <p>"The staff is friendly and efficient."</p>
+            <div class="testimonial-footer">
+                <span>- A Happy Patient</span>
+                <span class="stars">⭐⭐⭐⭐⭐</span>
+            </div>
+        </div>
+        <div class="testimonial-card">
+            <p>"Highly recommended for accurate results!"</p>
+            <div class="testimonial-footer">
+                <span>- A Happy Patient</span>
+                <span class="stars">⭐⭐⭐⭐⭐</span>
+            </div>
+        </div>
+        <div class="testimonial-card">
+            <p>"Affordable and reliable diagnostic services."</p>
+            <div class="testimonial-footer">
+                <span>- A Happy Patient</span>
+                <span class="stars">⭐⭐⭐⭐⭐</span>
+            </div>
+        </div>
+    </div>
+</section>
+
 
       <div className="contact-home">
         <h2>Get in Touch</h2>

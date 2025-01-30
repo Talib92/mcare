@@ -5,7 +5,7 @@ const Footer = () => {
   return (
     <div className="footer">
       <div className="footer-details">
-        <h2>M-Care Diagnostics</h2>
+        <p> <strong>M-Care Diagnostics</strong> <br /> Khah Bazar GMC Road Janglantmandi Anantnag, Kashmir 192101</p>
       </div>
       <div className="social-icons">
         <a 

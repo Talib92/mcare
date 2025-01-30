@@ -10,7 +10,7 @@ const Header = () => {
   };
 
   const closeMenu = () => {
-    setIsMenuOpen(false);
+    setIsMenuOpen(true);
   };
 
   return (
