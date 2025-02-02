@@ -1,72 +1,89 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect } from 'react';
+import { motion } from 'framer-motion';
 
 const About = () => {
-  const [animationClass, setAnimationClass] = useState("");
-
   useEffect(() => {
-    setAnimationClass("fade-in"); 
     window.scrollTo(0, 0);
   }, []);
 
+  const fadeIn = {
+    hidden: { opacity: 0, y: 50 },
+    visible: { opacity: 1, y: 0, transition: { duration: 0.6, ease: 'easeOut' } },
+  };
+
   return (
-    <div className={`about ${animationClass}`}>
-      <p>
+    <div className="about">
+      <motion.p 
+        initial="hidden" 
+        whileInView="visible" 
+        viewport={{ once: true }} 
+        variants={fadeIn}
+      >
         Welcome to <strong>M-Care Diagnostics</strong>, Anantnag’s trusted diagnostic center, 
-        dedicated to providing accurate and timely medical testing services. 
-        Our lab is equipped with advanced technology and follows stringent quality 
-        standards to ensure precise results for a wide range of diagnostic tests, 
-        including:
-        <br />
+        dedicated to providing accurate and timely medical testing services.
+      </motion.p>
 
-        <ul className='about-li'>
-          <li>Complete Blood Count (CBC)</li>
-          <li>Liver Function Tests (LFT)</li>
-          <li>Kidney Function Tests (KFT)</li>
-          <li>Blood Sugar (Fasting & Random)</li>
-          <li>Lipid Profile</li>
-          <li>Thyroid Function Tests (T3, T4, TSH)</li>
-          <li>Urine Routine & Microscopy</li>
-          <li>Electrolyte Panel</li>
-          <li>Dengue, Malaria, and Typhoid Tests</li>
-          <li>Vitamin D & B12 Tests</li>
-          <li>Pregnancy Test (Urine & Blood)</li>
-          <li>HIV Test</li>
-          <li>Hepatitis B & C Tests</li>
-          <li>COVID-19 RT-PCR & Rapid Tests</li>
-          <li>Hemoglobin A1c (HbA1c)</li>
-          <li>Bone Mineral Density Test (BMD)</li>
-          <li>Allergy Testing</li>
-          <li>Blood Culture Test</li>
-          <li>Malaria Rapid Test</li>
-          <li>Prostate-Specific Antigen (PSA)</li>
-        </ul>
+      <motion.ul className="about-li">
+        {[
+          "Complete Blood Count (CBC)",
+          "Liver Function Tests (LFT)",
+          "Kidney Function Tests (KFT)",
+          "Blood Sugar (Fasting & Random)",
+          "Lipid Profile",
+          "Thyroid Function Tests (T3, T4, TSH)",
+          "Urine Routine & Microscopy",
+          "Electrolyte Panel",
+          "Dengue, Malaria, and Typhoid Tests",
+          "Vitamin D & B12 Tests",
+        ].map((test, index) => (
+          <motion.li 
+            key={index} 
+            initial="hidden" 
+            whileInView="visible" 
+            viewport={{ once: true }} 
+            variants={fadeIn}
+          >
+            {test}
+          </motion.li>
+        ))}
+      </motion.ul>
 
-        <div className='more-info'>
-          <div>
-            🕒 <strong>Working Hours:</strong> 
-            <p>Monday - Sunday: <strong>8am - 6pm</strong></p>
-          </div>
-
-          <div>
-            🏠 <strong>Home Sample Collection:</strong>  
-            <p>We offer home sample collection services for your convenience.</p>
-          </div>
+      <motion.div 
+        className="more-info"
+        initial="hidden" 
+        whileInView="visible" 
+        viewport={{ once: true }} 
+        variants={fadeIn}
+      >
+        <div>
+          🕒 <strong>Working Hours:</strong>
+          <p>Monday - Sunday: <strong>8am - 6pm</strong></p>
         </div>
-        
-        At M-Care Diagnostics, we prioritize patient care by delivering reliable 
-        reports that assist doctors in making informed healthcare decisions. 
-        Our team is committed to maintaining the highest level of professionalism, 
-        efficiency, and confidentiality.
-        <br />
-        <br />
 
-        We strive to make healthcare accessible and convenient for our patients by 
-        offering quick turnaround times, affordable pricing, and exceptional service. 
-        Your health is our priority, and we are here to support your well-being with 
-        trustworthy diagnostic solutions.
-        
-        <h3>Visit us today and experience accuracy you can trust!</h3>
-      </p>
+        <div>
+          🏠 <strong>Home Sample Collection:</strong>
+          <p>We offer home sample collection services for your convenience.</p>
+        </div>
+      </motion.div>
+
+      <motion.p 
+        initial="hidden" 
+        whileInView="visible" 
+        viewport={{ once: true }} 
+        variants={fadeIn}
+      >
+        At M-Care Diagnostics, we prioritize patient care by delivering reliable 
+        reports that assist doctors in making informed healthcare decisions.
+      </motion.p>
+
+      <motion.h3 
+        initial="hidden" 
+        whileInView="visible" 
+        viewport={{ once: true }} 
+        variants={fadeIn}
+      >
+        Visit us today and experience accuracy you can trust!
+      </motion.h3>
     </div>
   );
 };
