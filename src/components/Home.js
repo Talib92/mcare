@@ -6,7 +6,7 @@ const Home = () => {
   const [animationClass, setAnimationClass] = useState("");
 
   useEffect(() => {
-    setAnimationClass("fade-in"); // Add fade-in class when component mounts
+    setAnimationClass("fade-in"); 
     window.scrollTo(0, 0);
   }, []);
 

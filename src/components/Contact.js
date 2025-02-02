@@ -4,7 +4,7 @@ const Contact = () => {
   const [animationClass, setAnimationClass] = useState("");
 
   useEffect(() => {
-    setAnimationClass("fade-in"); // Trigger the fade-in animation when the component loads
+    setAnimationClass("fade-in"); 
     window.scrollTo(0, 0);
   }, []);
 
