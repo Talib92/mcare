@@ -817,6 +817,7 @@ html {
 
   .services-list {
     grid-template-columns: repeat(2, 1fr);
+    padding: 0px 10%;
   }
 
   .service-card h3 {
