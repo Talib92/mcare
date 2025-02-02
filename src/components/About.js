@@ -1,13 +1,15 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 
 const About = () => {
+  const [animationClass, setAnimationClass] = useState("");
+
   useEffect(() => {
+    setAnimationClass("fade-in"); // Add fade-in class when component mounts
     window.scrollTo(0, 0);
   }, []);
 
   return (
-    <div className='about'>
-      
+    <div className={`about ${animationClass}`}>
       <p>
         Welcome to <strong>M-Care Diagnostics</strong>, Anantnag’s trusted diagnostic center, 
         dedicated to providing accurate and timely medical testing services. 
@@ -17,7 +19,6 @@ const About = () => {
         <br />
 
         <ul className='about-li'>
-
           <li>Complete Blood Count (CBC)</li>
           <li>Liver Function Tests (LFT)</li>
           <li>Kidney Function Tests (KFT)</li>
@@ -38,8 +39,8 @@ const About = () => {
           <li>Blood Culture Test</li>
           <li>Malaria Rapid Test</li>
           <li>Prostate-Specific Antigen (PSA)</li>
-
         </ul>
+
         <div className='more-info'>
           <div>
             🕒 <strong>Working Hours:</strong> 
@@ -65,7 +66,6 @@ const About = () => {
         trustworthy diagnostic solutions.
         
         <h3>Visit us today and experience accuracy you can trust!</h3>
-
       </p>
     </div>
   );

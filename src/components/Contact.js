@@ -1,11 +1,15 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 
 const Contact = () => {
-    useEffect(() => {
-      window.scrollTo(0, 0);
-    }, []);
+  const [animationClass, setAnimationClass] = useState("");
+
+  useEffect(() => {
+    setAnimationClass("fade-in"); // Trigger the fade-in animation when the component loads
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
-    <div className='contact'>
+    <div className={`contact ${animationClass}`}>
       <p>
         At <strong>M-Care Diagnostics</strong>, we are committed to providing you with convenient and reliable healthcare services. Whether you need information about our tests, reports, or services, feel free to reach out to us.
       </p>
@@ -43,14 +47,14 @@ const Contact = () => {
           <p>Follow us on</p> 
           <a href="https://www.facebook.com/mcarediagnostics?mibextid=wwXIfr&rdid=33pGqgGlq5rUuT09&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F1XT4Cfyg99%2F%3Fmibextid%3DwwXIfr#" target="_blank" rel="noopener noreferrer">Facebook</a> -
           <a href="https://www.instagram.com/mcare.diagnostics?igsh=MTdkOHR4ZGh6bTZjdg%3D%3D&utm_source=qr" target="_blank" rel="noopener noreferrer"> Instagram</a> -
-          <a href="https://www.youtube.com/@Mcarediagnostics" target="_blank" rel="noopener noreferrer"> Youtube</a> 
+          <a href="https://www.youtube.com/@Mcarediagnostics" target="_blank" rel="noopener noreferrer"> Youtube</a>
           <p>for health tips, updates, and offers.</p>
         </div>
       </div>
 
       <h3>Feel free to call, visit, or drop us a message. Your health is our priority!</h3>
     </div>
-  )
-}
+  );
+};
 
-export default Contact
+export default Contact;

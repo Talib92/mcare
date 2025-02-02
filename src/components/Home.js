@@ -1,13 +1,17 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import { Link } from "react-router-dom"; 
 import { FaPhone, FaMapMarkerAlt, FaFlask, FaStar, FaUsers } from "react-icons/fa";
 
 const Home = () => {
-    useEffect(() => {
-      window.scrollTo(0, 0);
-    }, []);
+  const [animationClass, setAnimationClass] = useState("");
+
+  useEffect(() => {
+    setAnimationClass("fade-in"); // Add fade-in class when component mounts
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
-    <div className="home">
+    <div className={`home ${animationClass}`}>
       <div className="hero">
         <h1>Your Trusted Partner in Diagnostics</h1>
         <p>Accurate Testing | Fast Reports | Trusted by Thousands</p>
@@ -60,7 +64,7 @@ const Home = () => {
       <div className="why-choose-us">
         <h2>Why Choose Us?</h2>
         <div className="why-grid">
-          {[
+          {[ 
             { icon: <FaFlask />, title: "Advanced Lab Equipment" },
             { icon: <FaUsers />, title: "Trusted by Thousands" },
             { icon: <FaStar />, title: "Fast & Accurate Reports" },
@@ -74,40 +78,39 @@ const Home = () => {
         </div>
       </div>
 
-      <section class="testimonials">
-    <h2>What Our Patients Say</h2>
-    <div class="testimonials-grid">
-        <div class="testimonial-card">
+      <section className="testimonials">
+        <h2>What Our Patients Say</h2>
+        <div className="testimonials-grid">
+          <div className="testimonial-card">
             <p>"Great service and very professional!"</p>
-            <div class="testimonial-footer">
-                <span>- Muhammad Talib</span>
-                <span class="stars">⭐⭐⭐⭐⭐</span>
+            <div className="testimonial-footer">
+              <span>- Muhammad Talib</span>
+              <span className="stars">⭐⭐⭐⭐⭐</span>
             </div>
-        </div>
-        <div class="testimonial-card">
+          </div>
+          <div className="testimonial-card">
             <p>"The staff is friendly and efficient."</p>
-            <div class="testimonial-footer">
-                <span>- Muneeb Ahmad</span>
-                <span class="stars">⭐⭐⭐⭐⭐</span>
+            <div className="testimonial-footer">
+              <span>- Muneeb Ahmad</span>
+              <span className="stars">⭐⭐⭐⭐⭐</span>
             </div>
-        </div>
-        <div class="testimonial-card">
+          </div>
+          <div className="testimonial-card">
             <p>"Highly recommended for accurate results!"</p>
-            <div class="testimonial-footer">
-                <span>- Asrar Ahmad</span>
-                <span class="stars">⭐⭐⭐⭐⭐</span>
+            <div className="testimonial-footer">
+              <span>- Asrar Ahmad</span>
+              <span className="stars">⭐⭐⭐⭐⭐</span>
             </div>
-        </div>
-        <div class="testimonial-card">
+          </div>
+          <div className="testimonial-card">
             <p>"Affordable and reliable diagnostic services."</p>
-            <div class="testimonial-footer">
-                <span>- Tawheed Khan</span>
-                <span class="stars">⭐⭐⭐⭐⭐</span>
+            <div className="testimonial-footer">
+              <span>- Tawheed Khan</span>
+              <span className="stars">⭐⭐⭐⭐⭐</span>
             </div>
+          </div>
         </div>
-    </div>
-</section>
-
+      </section>
 
       <div className="contact-home">
         <h2>Get in Touch</h2>

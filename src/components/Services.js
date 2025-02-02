@@ -1,11 +1,15 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 
 const Services = () => {
-    useEffect(() => {
-      window.scrollTo(0, 0);
-    }, []);
+  const [animationClass, setAnimationClass] = useState("");
+
+  useEffect(() => {
+    setAnimationClass("fade-in"); // Trigger the fade-in animation when the component loads
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
-    <div className="services-page">
+    <div className={`services-page ${animationClass}`}>
       <h2>Our Diagnostic Services</h2>
       <p>
         At <strong>M-Care Diagnostics,</strong> we offer a comprehensive range of diagnostic services to help doctors and healthcare professionals make accurate and timely decisions. Our state-of-the-art equipment and expert team ensure high-quality results for all our tests.
