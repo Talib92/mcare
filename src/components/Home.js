@@ -13,7 +13,7 @@ const Home = () => {
         <p>Accurate Testing | Fast Reports | Trusted by Thousands</p>
         <div className="hero-buttons">
           <a 
-            href="https://wa.me/6005313101?text=Hi,%20I%20would%20like%20to%20book%20a%20test." 
+            href="https://wa.me/916005313101?text=Hi,%20I%20would%20like%20to%20book%20a%20test." 
             className="btn primary" 
             target="_blank" 
             rel="noopener noreferrer"

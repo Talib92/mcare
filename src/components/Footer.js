@@ -25,7 +25,7 @@ const Footer = () => {
           <i className="fa fa-instagram"></i> 
         </a>
         <a 
-          href="https://wa.me/6005313101" 
+          href="https://wa.me/916005313101" 
           target="_blank" 
           rel="noopener noreferrer"
           className="social-icon"
